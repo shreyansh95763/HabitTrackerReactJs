@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+// import InputBox from "./components/InputBox";
+import HabitListContainers from "./components/HabitListCon";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Weekly from './components/Weekly';
+import Error from './components/Error';
+import  {HabitProvider}  from './components/HabitContext.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return <>
+    <BrowserRouter>
+    <HabitProvider>
+      <Routes>
+        <Route exact path="/" element={<HabitListContainers />} />
+        <Route exact path="/Weekly" element={<Weekly />} />
+        <Route path="*" element={<Error />} />      
+  </Routes>
+  </HabitProvider>
+
+    </BrowserRouter>
+
+  </>
 }
 
 export default App;

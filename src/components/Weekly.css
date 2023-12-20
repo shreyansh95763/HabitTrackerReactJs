@@ -1,0 +1,80 @@
+.week-btn{
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.heading-weekly{
+    background-color:rgb(215, 50, 50);
+    box-shadow: 5px 5px 15px 5px red;
+}
+.weekly-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.days-list-container{
+    display: flex;  
+    margin:1rem 0;
+    
+}
+.days-container{
+    width: 10rem;
+    background-color: darkorange;
+    padding:1rem;
+    margin: 1.8rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px black;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+
+}
+.u-icons{
+    border-radius: 50%;
+    background-color: hwb(19 8% 20%);
+    font-size: "small";
+    padding:.1rem;
+    margin:.2rem;
+    font-size: .4rem;
+    /* font-weight: 00; */
+}
+.c-icons{
+    border-radius: 50%;   
+    font-size: "small";
+    padding:.1rem;
+    margin:.2rem;
+    font-size: .4rem;
+    /* font-weight: 00; */
+}
+.currect{
+    background-color: red;
+}
+.remove{
+    background-color: red;
+}
+.non{
+    background-color: red;
+}
+.u-icons:hover{
+    background-color: red;
+}
+.back-home-btn{
+    background-color: rgb(78, 78, 195);
+    color:black;
+    text-decoration: none;
+    font-size:25px;
+    margin:3rem;
+    font-weight: 600;
+    padding:1rem;
+    width: 35vw;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}

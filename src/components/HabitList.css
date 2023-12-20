@@ -1,0 +1,50 @@
+.container_lists{
+    background-color: rgb(215, 209, 222);
+    box-shadow: 5px 5px 15px -5px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    /* min-height: 80vh; */
+    margin:2rem auto;
+    border-radius: 15px;
+    /* margin-top:1rem; */
+}
+h4{
+   text-align: left;
+   margin-left: 1rem;
+}
+.container-list{
+    background-color: rgb(55, 96, 140);
+    line-height: 1;
+    margin: 10px auto;
+    width: 80%;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+}
+.left-content{
+    margin-left: 2rem;
+}
+.btn-list {
+    padding: 7px 12px;
+    border-radius: 11px;
+    margin: 9px 1rem;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgb(20, 233, 20);
+}
+.rmove{
+    background-color: rgb(172, 73, 73);
+}
+
+.error-container{
+    height: 100vh;
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+           /* Weekly Page Css code */
