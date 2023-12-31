@@ -56,7 +56,7 @@ const Weekly = (props) => {
                 )}
 
             </div>
-            <button className="back-home-btn"><NavLink to="/">Go Back Home <span>&nbsp;&nbsp;<FirstPageIcon style={{ fontSize: "larger" }} /></span></NavLink></button>
+            <button className="back-home-btn"><NavLink to="/HabitTrackerReactJs">Go Back Home <span>&nbsp;&nbsp;<FirstPageIcon style={{ fontSize: "larger" }} /></span></NavLink></button>
 
         </div>
 

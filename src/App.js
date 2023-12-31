@@ -13,8 +13,8 @@ const App = () => {
     <HabitProvider>
       <Routes>
         <Route exact path="/HabitTrackerReactJs" element={<HabitListContainers />} />
-        <Route exact path="/HabitTrackerReactJs/Weekly" element={<Weekly />} />
-        {/* <Route path="*" element={<Error />} />       */}
+        <Route exact path="/Weekly" element={<Weekly />} />
+        <Route path="*" element={<Error />} />      
   </Routes>
   </HabitProvider>
 
