@@ -2,35 +2,40 @@ import React, { useState } from "react";
 import "./inputBox.css";
 
 const InputBox = (props) => {
+  // State to manage the input data for the new habit.
   const [data, setData] = useState("");
+  
+  // State to manage the visibility of the modal.
   const [modal, setModal] = useState(false);
-  // const [val , setVal] = useState([])
 
+  // Handler for updating the data state based on input changes.
   const dataHandler = (event) => {
     setData(event.target.value);
   };
- 
 
+  // Function to handle adding a new habit to the list.
   const itemList = (e) => {
     e.preventDefault();
     props.passVal(data);
-    setData("")
+    setData("");
   };
 
+  // Function to toggle the visibility of the modal.
   const toggleModal = () => {
     setModal(!modal);
   };
 
+  // Adding/removing a class to the body based on the modal state for styling purposes.
   if (modal) {
-    document.body.classList.add('active-modal')
+    document.body.classList.add('active-modal');
   } else {
-    document.body.classList.remove('active-modal')
+    document.body.classList.remove('active-modal');
   }
 
+  // Rendering the component.
   return (
     <>
-
-
+      {/* Main container with app title and buttons to toggle the modal. */}
       <div className="container">
         <div></div>
         <h1 className="heading-name">Habit Tracker App</h1>
@@ -40,6 +45,7 @@ const InputBox = (props) => {
         </div>
       </div>
 
+      {/* Modal for adding a new habit, rendered conditionally based on the modal state. */}
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
@@ -55,8 +61,8 @@ const InputBox = (props) => {
           </div>
         </div>
       )}
-
     </>
   );
-}
+};
+
 export default InputBox;
