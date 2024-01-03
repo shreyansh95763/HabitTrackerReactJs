@@ -3,6 +3,7 @@ import "./HabitList.css";
 import { NavLink } from "react-router-dom";
 
 const HabitList = (props) => {
+     // Function to handle deleting a habit
     const deleteNote = () => {
         props.deleteItems(props.id);
     }
