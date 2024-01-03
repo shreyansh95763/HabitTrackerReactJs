@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HabitTrackerReactJs/static/css/main.1db699be.css",
-    "main.js": "/HabitTrackerReactJs/static/js/main.d31b6867.js",
+    "main.css": "/HabitTrackerReactJs/static/css/main.1b643d82.css",
+    "main.js": "/HabitTrackerReactJs/static/js/main.8a5c4a79.js",
     "static/js/787.5d027200.chunk.js": "/HabitTrackerReactJs/static/js/787.5d027200.chunk.js",
     "index.html": "/HabitTrackerReactJs/index.html",
-    "main.1db699be.css.map": "/HabitTrackerReactJs/static/css/main.1db699be.css.map",
-    "main.d31b6867.js.map": "/HabitTrackerReactJs/static/js/main.d31b6867.js.map",
+    "main.1b643d82.css.map": "/HabitTrackerReactJs/static/css/main.1b643d82.css.map",
+    "main.8a5c4a79.js.map": "/HabitTrackerReactJs/static/js/main.8a5c4a79.js.map",
     "787.5d027200.chunk.js.map": "/HabitTrackerReactJs/static/js/787.5d027200.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1db699be.css",
-    "static/js/main.d31b6867.js"
+    "static/css/main.1b643d82.css",
+    "static/js/main.8a5c4a79.js"
   ]
 }
