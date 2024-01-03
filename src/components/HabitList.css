@@ -1,6 +1,6 @@
 .container_lists{
     background-color: rgb(215, 209, 222);
-    box-shadow: 5px 5px 15px -5px black;
+
     display: flex;
     flex-direction: column;
     text-align: center;

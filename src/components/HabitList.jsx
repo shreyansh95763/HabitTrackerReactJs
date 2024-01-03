@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./HabitList.css";
 import { NavLink } from "react-router-dom";
 
 const HabitList = (props) => {
+    // Function to handle deleting a habit
     const deleteNote = () => {
         props.deleteItems(props.id);
     }
@@ -23,4 +24,4 @@ const HabitList = (props) => {
 
 }
 
-export default HabitList
+export default HabitList;

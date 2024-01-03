@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./HabitList.css";
 import { useHabitContext } from './HabitContext';
 import HabitList from "./HabitList";
@@ -7,25 +7,18 @@ import InputBox from "./InputBox"
 
 
 const HabitListContainer = () => {
-    // const [habits, addHabit] = useState([]);
+    // Using the useHabitContext hook to access habits state and related functions from the context provider.
     const { habits, addHabit, removeHabit } = useHabitContext();
+    // Callback function to add a new habit and log its value.
     const backVal = (val) => {
-        // addHabit((prevData) => {
-        //     return [...prevData,val]
-        // })
         addHabit(val)
         console.log(val);
     }
-    // const onDelete = (id) => {
-    //       removeHabit((oldData) =>
-    //       oldData.filter((current, indx) => {
-    //         return (indx !== id);
-    //       })
-    //     )}
+   // Delete function to remove a habit by its index.
     const onDelete = (id) => {
       removeHabit(id);
     };
-    
+    // Rendering the component.
     return (
         <>
             <InputBox passVal={backVal} />
